@@ -19,6 +19,7 @@ RUN go get -u github.com/howeyc/fsnotify
 RUN go get -u github.com/lib/pq
 RUN go get -u github.com/jtolds/gls
 
-ADD build.sh /build.sh
-RUN chmod +x /build.sh
-RUN /build.sh 
+# Define mountable directories.
+VOLUME ["/go/src/"]
+
+CMD /bin/bash
