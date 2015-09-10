@@ -4,7 +4,7 @@
 
 Build beego development environment with one command. Docker handles these for you.
 
-* Install Golang 1.4
+* Install Golang 1.5.1
 * Configurate GOPATH and PATH
 * Install [beego](https://github.com/astaxie/beego) and [bee](https://github.com/beego/bee)
 * Automatically load the code from local
