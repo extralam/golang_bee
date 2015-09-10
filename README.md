@@ -1,7 +1,5 @@
 # Beego GoLang
 
-![](beego_docker.png)
-
 ## Introduction
 
 Build beego development environment with one command. Docker handles these for you.
