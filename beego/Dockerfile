@@ -3,8 +3,9 @@
 FROM golang:latest
 MAINTAINER alan certain603@gmail.com
 
-ENV GOPATH /data/golang
-ENV PATH $GOPATH/bin:$PATH
+EXPOSE 80 8080
+
+ENV PATH $PATH:$GOPATH/bin
 
 RUN apt-get update
 RUN apt-get upgrade -y
@@ -18,8 +19,6 @@ RUN go get -u github.com/howeyc/fsnotify
 RUN go get -u github.com/lib/pq
 RUN go get -u github.com/jtolds/gls
 
-WORKDIR /data/golang 
-EXPOSE 22 8080
-EXPOSE 80 80
-
-CMD ["/data/golang"]
+ADD build.sh /build.sh
+RUN chmod +x /build.sh
+RUN /build.sh 
