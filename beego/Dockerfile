@@ -3,7 +3,8 @@
 FROM golang:latest
 MAINTAINER alan certain603@gmail.com
 
-# ENV GOPATH /go
+ENV PATH $PATH:$GOPATH/bin
+
 RUN apt-get update
 RUN apt-get upgrade -y
 
