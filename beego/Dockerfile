@@ -3,9 +3,7 @@
 FROM golang:latest
 MAINTAINER alan certain603@gmail.com
 
-EXPOSE 80 8080
-
-ENV PATH $PATH:$GOPATH/bin
+EXPOSE 80
 
 RUN apt-get update
 RUN apt-get upgrade -y
