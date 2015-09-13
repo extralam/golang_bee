@@ -1,9 +1,10 @@
 #/bin/bash 
 
-go install github.com/beego/bee
-go install github.com/astaxie/beego
-go install github.com/go-sql-driver/mysql
-go install github.com/howeyc/fsnotify
-go install github.com/lib/pq
-go install github.com/smartystreets/goconvey/convey
-go install github.com/jtolds/gls
+ADD github.com/beego/bee
+ADD github.com/astaxie/beego
+ADD github.com/go-sql-driver/mysql
+ADD github.com/howeyc/fsnotify
+ADD github.com/lib/pq
+ADD github.com/smartystreets/goconvey/convey
+ADD github.com/jtolds/gls
+go install 
