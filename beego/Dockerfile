@@ -11,3 +11,4 @@ RUN go get -u github.com/howeyc/fsnotify
 RUN go get -u github.com/lib/pq
 RUN go get -u github.com/jtolds/gls
 
+ENTRYPOINT ["/home/"]
